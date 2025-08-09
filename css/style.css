@@ -229,6 +229,8 @@ ul.slick-dots li.slick-active button {
 @supports not (aspect-ratio: 1 / 1) {
   .snapwidget-widget {
     height: auto;
+  }
+}
 
 /* スマホ画面など小さい画面向け */
 @media screen and (max-width: 600px) {
