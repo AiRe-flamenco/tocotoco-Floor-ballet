@@ -229,6 +229,7 @@ ul.slick-dots li.slick-active button {
   .snapwidget-widget {
     max-width: 100%;
     height: 350px;  /* 高さは適宜調整してください */
+	margin-bottom: 10px; /* 下の余白を小さくする */
   }
 }
 
