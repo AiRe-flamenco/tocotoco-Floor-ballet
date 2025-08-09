@@ -57,11 +57,86 @@
 
 </section>
 
+<!-- Font Awesomeの読み込み（CDN） -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  .insta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1em;
+    color: #000000; /* Instagramカラー */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .insta-link:hover {
+    text-decoration: underline;
+  }
+
+  .insta-link i {
+    font-size: 1.3em;
+  }
+</style>
+  
+<p style="text-align: center;">
+  <a href="https://www.instagram.com/tocotoco_tomoko.kakino/" class="insta-link" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i> Instagramはこちら
+  </a>
+</p>
+  
 <!-- SnapWidget -->
 <iframe src="https://snapwidget.com/embed/1105002" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" 
   style="border:none; overflow:hidden; width:795px; height:530px; display: block; margin: 0 auto;" 
   title="柿野とも子 tocotoco 床バレエ studioのInstagram"></iframe>
 
+<style>
+  form {
+    width: 100%; /* フォームの幅を調整（必要に応じて変更） */
+  }
+
+  label {
+    display: block; /* labelをブロック要素として表示 */
+    margin-bottom: 10px; /* 各フィールドの間にスペースを追加 */
+    font-size: 20px; /* 文字サイズ */
+  }
+
+  input, textarea {
+    display: block; /* 入力フィールドもブロック要素として表示 */
+    width: 100%; /* 入力フィールドの幅を100%にする */
+    padding: 8px; /* 余白を追加 */
+    margin-top: 5px; /* 入力フィールドとラベルの間にスペースを追加 */
+  }
+
+  /* メッセージ入力欄の高さを増やす */
+  textarea {
+    height: 200px; /* 必要に応じて変更 */
+  }
+  
+    button {
+    display: block;  /* ボタンをブロック要素として表示 */
+    margin: 20px auto;  /* ボタンを中央に配置（上下の余白も追加） */
+    padding: 10px 20px;  /* ボタンの余白を調整 */
+    font-size: 16px;  /* ボタンの文字サイズ */
+    cursor: pointer;  /* ボタンにカーソルを合わせた時の見た目を変更 */
+  }
+</style>
+
+<form action="https://formspree.io/f/meognprv" method="POST">
+  <label for="name">お名前:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">メールアドレス:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">メッセージ:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">送信</button>
+</form>
+  
 </main>
 
 </div>
