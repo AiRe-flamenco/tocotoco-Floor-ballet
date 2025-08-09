@@ -166,6 +166,12 @@ header {
 	margin-bottom: 80px;	/*画像の下に空けるスペース*/
 }
 
+  .mainimg-slick img {
+  width: 100%;            /* 横幅は親要素に合わせる */
+  height: auto;         /* 高さは自動調整 */
+  object-fit: cover;      /* はみ出す部分は切り取り、中央寄せ */
+}
+
 /*丸いページナビボタン全体を囲むブロック*/
 ul.slick-dots {
 	margin:0;padding: 0;
@@ -198,6 +204,39 @@ ul.slick-dots li button {
 /*buttonのアクティブ時（現在表示されている画像を示すボタン）*/
 ul.slick-dots li.slick-active button {
 	background: var(--primary-color);	/*色。css冒頭で指定しているテーマカラーを読み込みます*/
+}
+
+/* スマホ画面など小さい画面向け */
+@media screen and (max-width: 600px) {
+  .mainimg-slick {
+    max-width: 100% !important;
+  }
+}
+
+/*snapwidget設定
+---------------------------------------------------------------------------*/
+/* SnapWidget iframeをレスポンシブに */
+.snapwidget-widget {
+  max-width: 795px;  /* 元の幅 */
+  width: 100%;
+  height: auto;      /* 高さは後述のJSで調整することも多い */
+  display: block;
+  aspect-ratio: 4 / 3;  /* アスペクト比を維持して高さ自動 */
+  margin: 0 auto 10px auto; /* 下の余白も調整 */
+}
+
+/* 古いブラウザ向けに aspect-ratio が使えない場合 */
+@supports not (aspect-ratio: 1 / 1) {
+  .snapwidget-widget {
+    height: auto;
+
+/* スマホ画面など小さい画面向け */
+@media screen and (max-width: 600px) {
+  .snapwidget-widget {
+    max-width: 100%;
+    height: 70vw;  /* 横幅の70%の高さにする（アスペクト比維持） */
+    margin-bottom: 10px; /* 下の余白を最小限に */
+  }
 }
 
 
