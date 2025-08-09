@@ -209,7 +209,7 @@ ul.slick-dots li.slick-active button {
 /* スマホ画面など小さい画面向け */
 @media screen and (max-width: 600px) {
   .mainimg-slick {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 
