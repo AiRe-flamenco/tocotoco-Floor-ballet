@@ -206,6 +206,32 @@ ul.slick-dots li.slick-active button {
 	background: var(--primary-color);	/*色。css冒頭で指定しているテーマカラーを読み込みます*/
 }
 
+/* スマホ画面など小さい画面向け */
+@media screen and (max-width: 600px) {
+  .mainimg-slick {
+    max-width: 100%;
+  }
+}
+
+/*snapwidget設定
+---------------------------------------------------------------------------*/
+/* SnapWidget iframeをレスポンシブに */
+.snapwidget-widget {
+  max-width: 795px;  /* 元の幅 */
+  width: 100%;
+  height: auto;      /* 高さは後述のJSで調整することも多い */
+  display: block;
+  margin: 0 auto;
+}
+
+/* スマホ画面など小さい画面向け */
+@media screen and (max-width: 600px) {
+  .snapwidget-widget {
+    max-width: 100%;
+    height: 350px;  /* 高さは適宜調整してください */
+  }
+}
+
 
 /*mainブロック設定
 ---------------------------------------------------------------------------*/
