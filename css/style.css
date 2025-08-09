@@ -221,6 +221,7 @@ ul.slick-dots li.slick-active button {
   width: 100%;
   height: auto;      /* 高さは後述のJSで調整することも多い */
   display: block;
+  aspect-ratio: 4 / 3;  /* アスペクト比を維持して高さ自動 */
   margin: 0 auto 10px auto; /* 下の余白も調整 */
 }
 
