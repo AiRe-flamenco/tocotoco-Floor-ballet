@@ -168,7 +168,7 @@ header {
 
   .mainimg-slick img {
   width: 100%;            /* 横幅は親要素に合わせる */
-  height: 1000px;          /* 高さを統一 */
+  height: auto;         /* 高さは自動調整 */
   object-fit: cover;      /* はみ出す部分は切り取り、中央寄せ */
 }
 
